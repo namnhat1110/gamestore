@@ -30,7 +30,7 @@ body{
     height: 35vh;
 } */
 
-.landingpage{
+#landingpage{
     margin: 8rem 10rem;
 
 }
@@ -43,9 +43,32 @@ body{
     background-color: white;
     border: solid 5px white;
     display: flex;
+    justify-content: space-between;
+}
+
+#store2{
+    border: solid 5px teal;
+    margin-top: 2rem;
+}
+
+.rpg{
+    background-color: white;
+    border: solid 5px white;
+    display: flex;
     justify-content: space-between
 }
 
+#store3{
+    border: solid 5px blueviolet;
+    margin-top: 2rem;
+}
+
+.sport{
+    background-color: white;
+    border: solid 5px white;
+    display: flex;
+    justify-content: space-between
+}
 
 .card-img-top {
 	height: 100%;
@@ -56,3 +79,63 @@ iframe{
     height: 30rem;
 }
 
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(12, 24, 33, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .action1:hover .overlay {
+    height: 70%;
+  }
+  
+  .action2:hover .overlay {
+    height: 70%;
+  }
+
+  .action3:hover .overlay {
+    height: 70%;
+  }
+
+  .rpg1:hover .overlay {
+    height: 70%;
+  }
+  
+  .rpg2:hover .overlay {
+    height: 70%;
+  }
+
+  .rpg3:hover .overlay {
+    height: 70%;
+  }
+  
+  .sport1:hover .overlay {
+    height: 70%;
+  }
+  
+  .sport2:hover .overlay {
+    height: 70%;
+  }
+
+  .sport3:hover .overlay {
+    height: 70%;
+  }
+
+  
+  .text {
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 0 2rem;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
